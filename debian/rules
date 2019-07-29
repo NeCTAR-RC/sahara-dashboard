@@ -20,7 +20,6 @@ endif
 
 override_dh_clean:
 	dh_clean -O--buildsystem=python_distutils
-	rm -rf .coverage*
 
 override_dh_auto_install:
 	pkgos-dh_auto_install --no-py2
